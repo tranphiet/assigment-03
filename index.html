@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
+    
+    <!--Bootstrap core CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <div id="banner" style="padding: 50px 50px 0px 50px">
+      <img src="images/banner.jpg" alt="ẢNH CÁ NHÂN" class="private-picture" />
+      <div class="name-banner">
+        <h1>Trần Thế Phiệt</h1><br/>
+        <span>Full Stack Developer</span>
+      </div>
+      
+    </div>
+    
+    <section id="nav-bar">
+      
+      <nav class="container">
+        <div class="nav-bar-arange thongtin">
+          <i class="icon-user"></i><a href="#">Thông tin</a> </div><!--them icon vao-->
+        
+        <div class="nav-bar-arange ly-lich">
+          <i class="icon-doc-text-inv"></i><a href="#">Lý lịch</a> </div><!--them icon vao-->
+        
+        <div class="nav-bar-arange private-name">
+          <span>Tran The Phiet</span><br/><span>Fullstacck developer</span><!--them icon vao-->
+          </div>
+        <div class="nav-bar-arange chungchi">
+          <i class="icon-mail-alt"></i><a href="#">Chứng chỉ</a> </div><!--them icon vao-->
+        
+        <div class="nav-bar-arange nav-duan"><i class="icon-star-1"></i><a href="#">Dự Án</a> </div><!--them icon vao-->
+      </nav>
+      
+    </section>
+
+    <section id="about" class="bg-grey">
+      
+      <div class="container container-fluid">
+        <div id="target">
+          <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+          <p>
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+            <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã được
+            trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+            hoàn thành tốt nhất công việc được giao.
+          </p>
+        </div>
+        <div id="personal-info"style="margin-top: 40px">
+          <h1 class="section-title ps-0">Thông tin cá nhân</h1>
+          <ul class="mt-40 ps-0 info hidden">
+            <li><span>Giới tính</span> : Nam</li>
+            <li><span>Ngày sinh</span> : 19/05/2000</li>
+            <li><span>Điện thoại</span> : (+84) 912398xxx</li>
+            <li><span>Email</span> : sinhvien@funix.edu.vn</li>
+            <li><span>Địa chỉ</span> : Số 10, đường 10, Hà Nội</li>
+            <li><span>Website</span> : https://abc.tech</li>
+            <!--them icon vao-->
+            <li><i class="icon-twitter"></i>
+              <i class="icon-facebook"></i>
+              <i class="icon-gplus"></i>
+              <i class="icon-linkedin"></i></li>
+          </ul>
+          <form class="inputEmail">            
+            <input class="yourEmail mb-2" type="email" name="inputEmail" placeholder="Enter email" pattern="tranthephiet@gmail.com" size="40">
+            <div class="error-text mb-2">
+              Xin Hãy Nhập Đúng Định Dạng Email !
+           </div>
+            <p class="fs-6">Hãy nhập email để xác thực</p>                       
+            <buttton type="botton" class="btn btn-primary submitBotton">submit</buttton>
+          </form>          
+        </div>        
+      </div>
+    </div>
+  </section>
+
+    <section id="job-info" >
+      <div class="container container-fluid">
+        <div class="row"><!--TAO GRID BOOTSTRAP-->
+        <div id="kn" class="job-info1 col-lg-4 col-md-6 col-sm" style="margin-top: 20px"><!--TAO size cot cho tung thiet bi BOOTSTRAP-->
+          <h3>Kinh nghiệm</h3><i id="job-info-tittle-icon" class="ic-toolbox"></i>
+          <div class="info-content1 unview">
+            <i class="bi bi-caret-down-fill"></i><button onclick="runButton()" type="botton" class="btn btn-secondary viewmore">viewmore</button></div>
+            <div class="info-content2 nomore">
+          <ul id="bulletdesign">
+            <li><strong>Quản lý nhà máy - Yachiyo Drinks Co,.Ltd</strong><br/><!--them vao cac noi dung lien quan-->
+            09/2020 - <span class="hientai">Hiện tại</span><br/>
+            - Quản lý chung hoạt động sản xuất nhà máy: Quản lý an toàn vệ sinh, chất lượng sản phẩm.<br/>
+            - Phụ trách quản lý nhân sự.<br/>
+            - Phụ trách bộ phận thương mại, xuất nhập khẩu.
+            </li>
+            <li><strong>Chuyên viên tư vấn đầu tư - One Value Co,.Ltd</strong><br/><!--them vao cac noi dung lien quanv-->
+            08/2019 - 09/2020<br/>
+            - Tư vấn đầu tư thị trường Việt Nam.<br/>
+            - Phụ trách bộ phận thương mại, xuất nhập khẩu.
+            </li>
+          </ul>
+          </div>          
+        </div>
+        <div id="hv" class="job-info1  col-lg-4 col-md-6 col-sm" style="margin-top: 20px"><!--TAO size cot cho tung thiet bi BOOTSTRAP-->
+          <h3>Học vấn</h3>
+          <i id="job-info-tittle-icon" class="ic-pencil"></i>
+          <div class="info-content1 unview">
+            <i class="bi bi-caret-down-fill"></i><button onclick="runButton()" type="botton" class="btn btn-secondary viewmore">viewmore</button></div>
+            <div class="info-content2 nomore">
+          <ul id="bulletdesign"><li><strong>Cử nhân đại học Kinh tế TPHCM</strong><br/><!--them vao cac noi dung lien quan-->
+            10/2007 - 10/2011<br/>
+            - CHuyên ngành Kinh tế Kế hoạch và Đầu tư.<br/><!--them vao cac noi dung lien quan-->
+            - Tốt nghiệp loại: Khá.
+          </li></ul>
+          </div>
+        </div>
+        <div id="hd" class="job-info1 col-lg-4 col-md-6 col-sm" style="margin-top: 20px"><!--TAO size cot cho tung thiet bi BOOTSTRAP-->
+          <h3>Hoạt động</h3>
+          <i id="job-info-tittle-icon" class="ic-toolbox"></i>
+          <div class="info-content1 unview">
+            <i class="bi bi-caret-down-fill"></i><button onclick="runButton()" type="botton" class="btn btn-secondary viewmore">viewmore</button></div>
+            <div class="info-content2 nomore">
+          <ul id="bulletdesign"><li><strong>Câu lạc bộ bóng đá</strong><br/><!--them vao cac noi dung lien quan-->
+            03/2007 - 10/2011<br/>
+            - Tham gia các hoạt động của câu lạc bộ: Giao lưu thi đấu bóng đá...<br/><!--them vao cac noi dung lien quan-->
+            
+          </li>
+          <li><strong>Hội thanh niên UEH</strong><br/>
+            04/2007 - 10/2011<br/>
+            - Tham gia các hoạt động của hội: Mùa xe xanh, thanh niên tình nguyện...<br/><!--them vao cac noi dung lien quan-->
+            
+          </li></ul>
+          </div>
+        </div>
+        <div id="st" class="job-info1 col-lg-4 col-md-6 col-sm" style="margin-top: 20px"><!--TAO size cot cho tung thiet bi BOOTSTRAP-->
+          <h3>Sở thích</h3>          
+          <i id="job-info-tittle-icon" class="ic-telescope"></i>
+          <div class="info-content1 unview">
+            <i class="bi bi-caret-down-fill"></i><button onclick="runButton()" type="botton" class="btn btn-secondary viewmore">viewmore</button></div>
+            <div class="info-content2 nomore">
+            <ul id="sothich" class="text-nowrap" >
+            <li>
+            <i id="sothich-icon-circle-border" class="ic-megaphone"></i><br/><!--them vao cac noi dung lien quan-->
+            <span>Âm nhạc</span>
+            </li>
+            <li>
+            <i id="sothich-icon-circle-border" class="ic-strategy"></i><br/>
+            <span>Chơi game</span>
+            </li>
+            <li>
+            <i id="sothich-icon-circle-border" class="ic-hotairballoon"></i><br/><!--them vao cac noi dung lien quan-->
+            <span>Du lịch</span>
+            </li>
+            <li>
+            <i id="sothich-icon-circle-border" class="ic-basket"></i><br/><!--them vao cac noi dung lien quan-->
+            <span>Nấu ăn</span>
+            </li>
+           
+          </ul>
+          </div>
+        </div>
+        <div id="nn" class="job-info1 col-lg-4 col-md-6 col-sm" style="margin-top: 20px"><!--TAO size cot cho tung thiet bi BOOTSTRAP-->
+          <h3>Ngôn ngữ</h3>          
+          <i id="job-info-tittle-icon" class="ic-mic"></i>
+          <div class="info-content1 unview">
+            <i class="bi bi-caret-down-fill"></i><button onclick="runButton()" type="botton" class="btn btn-secondary viewmore">viewmore</button>
+          </div>
+          <div class="info-content2 nomore">
+          <ul id="ngonngu" class="text-nowrap">
+            <li>Tiếng Anh - Toiec 650</li>
+            <li><span class="TA1"></span><span class="TA2"></span><span class="TA3"></span></li>
+            <li style= "margin-top:20px">Tiếng Nhật - JLPT N2</li>
+            <li><span class="TN1"></span><span class="TN2"></span><span class="TN3"></span></li>
+         
+          </ul>
+          </div>
+        </div>
+        <div id="knang" class="job-info1 col-lg-4 col-md-6 col-sm" style="margin-top: 20px">
+          <h3>Kỹ năng</h3>
+          <i id="job-info-tittle-icon" class="ic-tools-2"></i>
+          <div class="info-content1 unview">
+            <i class="bi bi-caret-down-fill"></i><button onclick="runButton()" type="botton" class="btn btn-secondary viewmore">viewmore</button>
+          </div>
+          <div class="info-content2 nomore">
+          <ul id="kynang" class="text-nowrap">
+            <li>Kỹ năng làm việc nhóm tốt</li><!--them vao cac noi dung lien quan-->
+            <li><span class="LVN1"></span><span class="LVN2"></span><span class="LVN3"></span><span class="LVN4"></span></li>
+            <li style= "margin-top:20px">Kỹ năng phân tích số liệu tốt</li><!--them vao cac noi dung lien quan-->
+            <li><span class="XLDL1"></span><span class="XLDL2"></span><span class="XLDL3"></span><span class="XLDL4"></span></li>
+            <li style= "margin-top:20px">Kỹ năng tin học văn phòng</li><!--them vao cac noi dung lien quan-->
+            <li><span class="THVP1"></span><span class="THVP2"></span><span class="THVP3"></span><span class="THVP4"></span></li></ul>
+            </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="certificate" class="bg-grey">
+      <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+      <div class="container container-fluid">        
+        <div class="row itemBorder"><!--TAO GRID BOOTSTRAP-->          
+          <div id="UNI-CER1" class="certificate-flex col col-md-6 col-sm"><!--TAO size cot cho tung thiet bi BOOTSTRAP-->
+            <img src="images/Cert_WEB.png" alt="UNIVERCITY-CER" class="CER-IMG" />
+            <p class="cer-content"><strong>Cử nhân đại học Kinh tế TPHCM</strong><br/><!--them vao cac noi dung lien quan-->
+            - CHuyên ngành Kinh tế Kế hoạch và Đầu tư.<br/>
+            - Tốt nghiệp loại: Khá.</p><!--them vao cac noi dung lien quan-->
+          </div>
+          <div id="UNI-CER2" class="certificate-flex col col-md-6 col-sm"><!--TAO size cot cho tung thiet bi BOOTSTRAP-->
+            <img src="images/Cert_WEB.png" alt="JLPT-N2-CER" class="CER-IMG" />
+            <p class="cer-content"><strong>Chứng chỉ JLPT</strong><br/><!--them vao cac noi dung lien quan-->
+            - Điểm số: A điểm.</p>
+          </div>      
+        </div>
+        <div id="UNI-CER3" class="certificate-flex">
+          <img src="images/Cert_WEB.png" alt="TOIEC-CER" class="CER-IMG" />
+          <p class="cer-content"><strong>Chứng chỉ tiếng Anh</strong><br/>
+            - Toiec: 650.</p>        
+        </div>      
+        </div>        
+      </div>
+    </section>
+
+    <section id="project">
+      <h1 class="section-title">Dự án</h1>
+      <div class="container container-fluid">
+      <div class="row"><!--TAO GRID BOOTSTRAP--> 
+      <div id="myPROJECT1" class="every-project-boder col-lg-4"><!--TAO size cot cho tung thiet bi BOOTSTRAP-->
+        <div><img src="images/project_1.png" alt="project_1" class="project-img" /></div>
+        <div class="cv-ca-nhan pb-5"><strong>THÀNH LẬP TRUNG TÂM BPO</strong>
+          <span class="d-block text-right"><i class="bi bi-chevron-double-right"></i><a title="details" href="https://www.projectcharter.html">view more details</a></span>
+        </div>
+        <div id="myCV1" class="cv-canhan-undercontent">
+          <div><span class="year">2021</span></div>
+          <div><i class="icon-user"></i><span class="schoolname">FUNIX</span></div>
+          <div><i class="icon-lamp"></i><span>Developer</span></div>
+        </div>
+        <table class="table-duan">
+          <tr>
+            <td class="left-column">Mô tả</td>
+            <td>Tiếp nhận hoạt động thuê ngoài và gia công quy trình kinh doanh(BPO)</td>
+          </tr>
+          <tr>
+            <td class="left-column">Nhiệm vụ</td>
+            <td>- Thiết lập hệ thống BPO - Nắm bắt được nghiệp vụ BPO - Hỗ trợ nhân viên</td>
+          </tr>
+          <tr>
+            <td class="left-column">Công nghệ</td>
+            <td>- VBA, Hệ thống nội bộ</td>
+          </tr>
+        </table>
+      </div>
+      <div id="myPROJECT2" class="every-project-boder col-lg-4"><!--TAO size cot cho tung thiet bi BOOTSTRAP-->
+        <div><img src="images/project_2.png" alt="project_2" class="project-img" /></div>
+        <div class="cv-ca-nhan pb-5"><strong>XÂY DỰNG NHÀ MÁY THẺ IC</strong><span class="d-block text-right"><i class="bi bi-chevron-double-right"></i><a title="details" href="https://www.projectcharter.html">view more details</a></span></div>
+        <div id="myCV2" class="cv-canhan-undercontent">
+          <div><span class="year">2021</span></div>
+          <div><i class="icon-user"></i><span>FUNIX</span></div>
+          <div><i class="icon-lamp"></i><span>Developer</span></div>
+        </div>
+        <table class="table-duan">
+          <tr>
+            <td class="left-column">Mô tả</td>
+            <td>Xây dựng nhà máy sản xuất thẻ IC tại Việt Nam, hỗ trợ việc sản xuất thẻ IC.</td>
+          </tr>
+          <tr>
+            <td class="left-column">Nhiệm vụ</td>
+            <td>- Nắm bắt nghiệp vụ thẻ - Tham gia trực tiếp quá trình thiết kế, sản xuất thẻ</td>
+          </tr>
+          <tr>
+            <td class="left-column">Công nghệ</td>
+            <td>- VBA, hệ thống nội bộ</td>
+          </tr>
+        </table>
+      </div>
+      <div id="myPROJECT3" class="every-project-boder col-lg-4"><!--TAO size cot cho tung thiet bi BOOTSTRAP-->
+        <div><img src="images/project_3.png" alt="project_3" class="project-img" /></div>
+        <div class="cv-ca-nhan pb-5"><strong>ĐẦU TƯ NHÀ MÁY ĐIỆN SINH KHỐI</strong><span class="d-block text-right"><i class="bi bi-chevron-double-right"></i><a title="details" href="https://www.projectcharter.html">view more details</a></span></div>
+        <div id="myCV3" class="cv-canhan-undercontent">
+          <div><span class="year">2021</span></div>
+          <div><i class="icon-user"></i><span>FUNIX</span></div>
+          <div><i class="icon-lamp"></i><span>Developer</span></div>
+        </div>
+        <table class="table-duan">
+          <tr>
+            <td class="left-column">Mô tả</td>
+            <td>Tư vấn chiến lược đầu tư nhà máy nhiệt điện sinh khối cho khách hàng tại Việt Nam.</td>
+          </tr>
+          <tr>
+            <td class="left-column">Nhiệm vụ</td>
+            <td>- Khảo sát thị trường - Liên hệ nhà cung cấp - Liên hệ đối tác</td>
+          </tr>
+          <tr>
+            <td class="left-column">Công nghệ</td>
+            <td>- VBA, Excel, PPT</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section id="footer" class="bg-grey">
+      <div id="contact-info" class="container">
+              
+        <ul>
+          <li><i class="icon-facebook-circled"></i></li><!--them vao cac icon lien quan-->
+          <li id="contact-link">Facebook</li>
+          <li><i class="icon-linkedin-circled"></i></li><!--them vao cac icon lien quan-->
+          <li id="contact-link">Linkedin</span></li>
+          
+          <li><i class="icon-github-circled"></i></li><!--them vao cac icon lien quan-->
+          <li id="contact-link">Github</span></li>
+          
+        </ul>
+        
+      </div>
+    </section>
+
+    <!--Lien ket Javascript-->
+    
+    <script src="script.js"></script>
+  </body>
+</html>
