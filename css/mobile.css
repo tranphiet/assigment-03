@@ -1,0 +1,121 @@
+@media (max-width: 576px) {
+  #banner .private-picture {
+    /*chinh hinh anh de thu nho lai thi anh cung thu theo*/
+    width: 100%;
+  }
+  .name-banner {
+    top: 10%;
+  }
+
+  /*NAV-BAR*/
+
+  /*chon chieu rong cho thiet bi mobile and under la 500px*/
+  #nav-bar .container {
+    /*dua tat ca no dung nav-bar ve 1 hang*/
+    display: block;
+    justify-content: center;
+  }
+
+  #nav-bar .nav-bar-arange {
+    /*chinh sua cho phan nav-bar giong thiet ke*/
+    width: 100%;
+    border: none;
+    height: 30px;
+    text-align: left;
+    margin: 10px 0px 10px 0px;
+    padding-left: 50px;
+  }
+
+  #nav-bar .nav-duan {
+    /*chinh sua cho vi tri giong thiet ke*/
+    padding-bottom: 30px;
+  }
+
+  /*ABOUT*/
+  #about .container {
+    /*dua tat ca no dung nav-bar ve 1 hang*/
+    display: block;
+    width: 100%;
+  }
+  #target {
+    /*thiet ke lai padding*/
+    padding-left: 10px;
+    width: 80%;
+  }
+  #personal-info {
+    /*thiet ke lai padding*/
+    padding-left: 10px;
+    width: 100%;
+  }
+
+  /*job-info*/
+  #job-info .container {
+    width: 100%;
+  }
+  #kynang,/*chinh sua cho phu hop thiet ke*/
+  #ngonngu {
+    font-size: medium;
+  }
+
+  /*Certificate*/
+  #certificate .container {
+    /*chinh sua cho phu hop thiet ke*/
+    width: 100%;
+  }
+  #certificate .section-title {
+    padding: 30px 0 0 50px;
+  }
+  .certificate-flex {
+    /*chinh sua cho phu hop thiet ke*/
+    flex-direction: column;
+    width: 100%;
+  }
+  .CER-IMG {
+    /*điều chỉnh kích thước ảnh*/
+    width: 300px;
+  }
+  #UNI-CER1 {
+    border-right: none; /*bo border-right*/
+  }
+  #UNI-CER3 {
+    border-bottom: 1px solid orange; /*chinh sua cho phu hop thiet ke*/
+    padding-bottom: 10px;
+  }
+
+  /*project*/
+  #project .section-title {
+    padding: 30px 0 0 50px;
+  }
+  #project .container {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #myPROJECT1,/*chinh sua cho phu hop thiet ke*/
+  #myPROJECT2,
+  #myPROJECT3 {
+    width: 100%;
+    padding: 30px 50px 30px 50px;
+  }
+  #myCV1,/*chinh sua cho phu hop thiet ke*/
+  #myCV2,
+  #myCV3 {
+    /*chinh sua cho phu hop thiet ke*/
+    flex-wrap: wrap;
+    padding: 15px 0px 15px 10px;
+    gap: 3px;
+  }
+  .inputEmail {
+    padding-bottom: 20px;
+  }
+  /*footer*/
+  #footer .container {
+    width: 100%;
+  }
+  #contact-link {
+    /*tao khoang cach cho cac contact-link*/
+    padding-right: 10px;
+  }
+} ;

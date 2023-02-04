@@ -1,0 +1,533 @@
+* {
+  margin: 0px;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+/*banner name*/
+.name-banner {
+  /*xac dinh vi tri h1*/
+  position: absolute;
+  text-align: center;
+  color: #000000;
+  top: 20%;
+  width: 100%;
+  left: 0%;
+}
+.private-picture {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/*NAV-BAR*/
+
+#nav-bar .container {
+  display: flex;
+  align-items: center; /*can chinh theo chieu doc*/
+  justify-content: center; /*can chinh theo chieu ngang*/
+  gap: 30px; /*gap giua cac flex items*/
+  padding: 0px 50px 0px 50px; /*Cho padding tren & duoi ve 0 de tao thiet ke nhu mau*/
+  width: 100%;
+}
+
+/*#nav-bar div {
+  /*dieu chinh chieu cao va tao padding cho cac items*/
+/*  height: 40px;
+  padding: 15px 15px 0px 15px;
+}*/
+
+/*#nav-bar .thongtin,
+.chungchi {
+  /*border trai, phai cho giong thiet ke*/
+/* border-right: 0.6px solid rgb(219, 213, 213);
+  border-left: 0.6px solid rgb(219, 213, 213);
+  text-align: center;
+  width: 150px;
+}*/
+
+/*#nav-bar .private-name {
+  border-left: 0.6px solid rgb(219, 213, 213);
+  text-align: center;
+  width: 250px;
+  padding: 0px 10px 10px 10px;
+}*/
+#nav-bar i {
+  color: #43c9e1; /*tao mau cho cac icon*/
+}
+
+/*MUC TIEU NGHE NGHIEP*/
+
+#about .container {
+  /*Tao grid layout*/
+  display: grid;
+  grid-template-columns: 50% 1fr; /*tao hai cot voi chieu rong 50%*/
+}
+#target {
+  grid-column: 1/2; /*dinh vi target o cot so 1*/
+
+  /*background-color: aqua;*/
+
+  padding: 20px 0px 0px 10%; /*tao padding can doi cho thiet ke*/
+  width: fit-content;
+}
+
+#target .section-title {
+  padding-top: 15px;
+  width: 100%;
+}
+
+/*THONG TIN CA NHAN*/
+#personal-info {
+  grid-column: 2/3; /*dinh vi thong tin ca nhan vao cot 2*/
+  /*background-color: blue;*/
+  padding-left: 20%; /*tao padding trai can bang cho thiet ke*/
+}
+#personal-info h1 {
+  padding-left: 35px;
+}
+#personal-info ul {
+  /*bo bullet phia trc di*/
+  list-style: none;
+}
+#personal-info i {
+  color: #43c9e1;
+}
+/*job-info THONG TIN NGHE NGHIEP*/
+/*#job-info .container {
+  /*Tao Grid layout cho phan THONG TIN NGHE NGHIEP*/
+/*  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}*/
+.hientai {
+  /*tao hinh va to mau cho chu hien tai*/
+  width: 100px;
+  height: 50px;
+  border-radius: 30%;
+  border: none;
+  text-align: center;
+  background-color: rgb(4, 146, 234);
+  align-items: center;
+  color: #ffffff;
+  padding: 0px 10px 0px 10px;
+}
+
+/*Tao Grid layout cho tung phan trong job-info  */
+.job-info1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 65% 1fr;
+  grid-template-rows: 95px 60px 3fr;
+  border: 1px solid #bcbec0;
+  align-items: start;
+  column-gap: 5px;
+}
+.btn {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  margin: 10px 0 10px 10px;
+}
+
+.info-content2 {
+  /*Cho phan noi dung ben duoi chiem khong gian 2 cot*/
+  grid-column: 1/3;
+  grid-row: 3;
+}
+#job-info h3 {
+  /*Tao padding cho tieu de h1*/
+  padding: 30px 0px 0px 10px;
+  text-align: left;
+  grid-area: 1/1/2/2;
+}
+
+#job-info-tittle-icon {
+  /*Dieu chinh kich thuoc va vi tri icon cho giong thiet ke*/
+  font-size: 40px;
+  text-align: center;
+  padding: 30px 20px 0px 0px; /*Tao padding cho icon phan tieu de*/
+}
+
+/*tao bullet mau xanh nhu thiet ke*/
+#bulletdesign {
+  list-style-type: none; /*bo bullet*/
+  text-align: start;
+  padding-left: 10px;
+}
+#bulletdesign li::before {
+  /*tao lai bullet mau xanh theo thiet ke*/
+  content: '\2022';
+  color: rgb(5, 155, 241);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+#sothich {
+  /*bo bullet muc so thich va dieu chinh noi dung theo hang ngang nhu thiet ke*/
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-right: 35px;
+  padding: 20px 0 0 15px;
+}
+#sothich-icon-circle-border {
+  /*tao vong tron cho icon va thiet ke mau sac*/
+  color: rgb(70, 200, 240);
+  width: 60px;
+  height: 40px;
+  border-radius: 50%;
+  /*background-color: aqua;*/
+  padding-top: 20px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(70, 200, 240);
+}
+
+#ngonngu {
+  list-style-type: none; /*bo bullet muc ngonngu*/
+  margin-right: 20px;
+}
+
+.TA1 {
+  /*Tao thang diem cho ngon ngu tieng Anh*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+.TA2 {
+  /*Tao thang diem cho ngon ngu tieng Anh*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+.TA3 {
+  /*Tao thang diem cho ngon ngu tieng Anh*/
+  background: #bcbec0;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+.TN1 {
+  /*Tao thang diem cho ngon ngu tieng Nhat*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+.TN2 {
+  /*Tao thang diem cho ngon ngu tieng Nhat*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+.TN3 {
+  /*Tao thang diem cho ngon ngu tieng Nhat*/
+  background: #bcbec0;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+#kynang {
+  list-style-type: none; /*bo bullet muc ky nang*/
+  margin-right: 20px;
+}
+.LVN1 {
+  /*Tao thang diem cho Ky nang lam viec nhom*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+.LVN2 {
+  /*Tao thang diem cho Ky nang lam viec nhom*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+.LVN3 {
+  /*Tao thang diem cho Ky nang lam viec nhom*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+.LVN4 {
+  /*Tao thang diem cho Ky nang lam viec nhom*/
+  background: #bcbec0;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+.XLDL1 {
+  /*Tao thang diem cho Ky nang lam viec nhom*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+.XLDL2 {
+  /*Tao thang diem cho Ky nang lam viec nhom*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+.XLDL3 {
+  /*Tao thang diem cho Ky nang lam viec nhom*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+.XLDL4 {
+  /*Tao thang diem cho Ky nang lam viec nhom*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.THVP1 {
+  /*Tao thang diem cho Ky nang lam viec nhom*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.THVP2 {
+  /*Tao thang diem cho Ky nang lam viec nhom*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.THVP3 {
+  /*Tao thang diem cho Ky nang lam viec nhom*/
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.THVP4 {
+  /*Tao thang diem cho Ky nang lam viec nhom*/
+  background: #bcbec0;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+/*Thay doi lai vi tri cac vung trong grid theo yeu cau*/
+#knang {
+  grid-area: 1/2/1/3;
+}
+#st {
+  grid-area: 2/3/2/4;
+}
+#nn {
+  grid-area: 1/3/1/4;
+}
+#hd {
+  grid-area: 2/1/2/2;
+}
+
+/*CHUNG CHI-GIAI THUONG*/
+#certificate .section-title {
+  padding: 30px 0 0 150px;
+}
+.CER-IMG {
+  /*điều chỉnh kích thước ảnh*/
+  width: 200px;
+}
+/*.itemBorder {
+  /*tạo display flex cho 2 cụm chứng chỉ đầu tiên*/
+/*  width: 100%;
+  padding: 30px 0px 30px 0px;
+  gap: 30px;
+
+  border-bottom: 1px solid orange; /*tạo đường bottom-line*/
+/*  padding-bottom: 20px;
+}*/
+
+.certificate-flex {
+  /*tạo display flex cho img và nội dung từng chứng chỉ*/
+  display: flex;
+  gap: 10px;
+  padding-top: 30px;
+}
+#UNI-CER1 {
+  border-bottom: 1px solid orange;
+  border-right: 1px solid orange; /*tạo đường line bên phải*/
+  padding-bottom: 10px;
+}
+#UNI-CER2 {
+  border-bottom: 1px solid orange;
+  padding-bottom: 10px;
+}
+
+/*DỰ ÁN*/
+/*Tao grid layout cho phan DU AN*/
+/*.project-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr;
+  /*border: 1px solid #bcbec0;*/
+/*justify-content: space-between;*/
+/*  margin-top: 30px;
+  gap: 10px;
+}*/
+
+#project .section-title {
+  padding: 30px 0 0 150px;
+}
+.project-img {
+  /*Thu nho kich thuoc anh*/
+  width: 100%;
+}
+.every-project-boder {
+  /*tao flexbox cho cac cot du an*/
+  /*border: 1px solid #bcbec0;*/
+  display: flex;
+  flex-direction: column; /*chi dinh flex theo cot*/
+}
+.cv-ca-nhan {
+  /*chinh sua phan cv ca nhan*/
+  border: 1px solid #bcbec0;
+  height: 60px;
+  padding: 5px 0px 0px 10px;
+  text-align: left;
+  justify-content: center;
+}
+.cv-canhan-undercontent {
+  /*chinh sua noi dung ben duoi phan cv ca nhan*/
+  border: 1px solid #bcbec0;
+  height: 50px;
+  padding: 10px 0px 20px 20px;
+  display: flex;
+  gap: 15px;
+}
+/*Tao border boc year*/
+.year {
+  width: 80px;
+  height: 30px;
+  border-radius: 20%;
+  border: none;
+  text-align: center;
+  background-color: aqua;
+  align-items: center;
+}
+/*ke cot cho bang va chinh sua cho phu hop voi thiet ke*/
+.table-duan tr {
+  border: 1px solid #bcbec0;
+}
+.table-duan {
+  border-collapse: collapse;
+  height: 250px;
+}
+.left-column {
+  width: 100px;
+  padding-left: 10px;
+}
+
+/*FOOTER*/
+#footer ul {
+  display: inline-block;
+  list-style-type: none; /*bo bullet muc ky nang*/
+  display: flex; /*dua cac muc ve cung 1 hang*/
+  justify-content: center;
+  align-items: center;
+}
+#contact-link {
+  /*tao khoang cach cho cac contact-link*/
+  padding-right: 50px;
+}
+#contact-link :link {
+  /*tao kieu cho cac lien ket*/
+  text-decoration: none;
+  color: #0000ff;
+}
+#contact-link :visited {
+  /*tao kieu cho cac lien ket*/
+  text-decoration: none;
+  color: #0000ff;
+}
+#contact-link:hover {
+  /*tao kieu cho cac lien ket*/
+  cursor: pointer;
+  color: #0000ff;
+}
+#contact-link :active {
+  /*tao kieu cho cac lien ket*/
+  text-decoration: none;
+  color: #0000ff;
+}
+#footer i {
+  /*tao size cho cac icon footer*/
+  font-size: 40px;
+  color: #43c9e1;
+}
+
+/*JAVASCRIPT*/
+.error-text {
+  position: relative;
+  margin: 15px 0 -5px 0;
+  background: #f45b5b;
+  color: #fceae8;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 5px;
+  user-select: none;
+  display: none;
+  width: 100%;
+}
+
+.yourEmail {
+  /*Chinh chieu rong o nhap email*/
+  width: 400px;
+}
+.hidden {
+  /*an thong tin phan info*/
+  display: none;
+}
+.unview {
+  display: none;
+}
+.nomore {
+  display: none;
+}
