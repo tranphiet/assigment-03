@@ -1,0 +1,43 @@
+@media (max-width: 960px) {
+  #banner .private-picture {
+    /*chinh sua cho phu hop thiet ke*/
+    width: 100%;
+  }
+
+  #nav-bar .container {
+    /*thiet ke lai nav-bar giong thiet ke*/
+    padding: 0;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+  }
+  #navar-bar .nav-bar-arange {
+    /*chinh sua cho phu hop thiet ke*/
+    width: 100%;
+    height: 40px;
+    padding: 0px 5px 0px 5px;
+    margin: 0;
+    border: 1px solid rgb(104, 104, 104);
+  }
+
+  /*job-info*/
+  #job-info .container {
+    /*chinh sua cho phu hop thiet ke*/
+    width: 100%;
+  }
+  /*Certificate*/
+  #certificate .container {
+    /*chinh sua cho phu hop thiet ke*/
+    width: 100%;
+  }
+  /*project*/
+  #project .container {
+    /*chinh sua cho phu hop thiet ke*/
+    width: 100%;
+  }
+  /*footer*/
+  #footer .container {
+    width: 100%; /*chinh sua cho phu hop thiet ke*/
+  }
+}
