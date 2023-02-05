@@ -57,17 +57,17 @@ function runButton() {
       //neu textContent cua nut bam ===viewmore thi chay lenh nay de hien thi noi dung ra
       const nomoreOn = function () {
         hiddenContents[i].classList.remove('nomore');
-        btnViewmores[i].textContent = 'viewless';
         markDowns[i].classList.remove('bi-caret-down-fill');
-        markDowns[i].classList.toggle('bi-caret-up-fill');
+        btnViewmores[i].textContent = 'viewless';        
+        markDowns[i].classList.add('bi-caret-up-fill');
       };
       btnViewmores[i].addEventListener('click', nomoreOn);
     } else {
       //neu nut bam khac viewmore thi chay lenh nay de an noi dung di
       const nomoreOf = function () {
         hiddenContents[i].classList.add('nomore');
-        btnViewmores[i].textContent = 'viewmore';
-        markDowns[i].classList.toggle('bi-caret-down-fill');
+        markDowns[i].classList.add('bi-caret-down-fill');
+        btnViewmores[i].textContent = 'viewmore';        
         markDowns[i].classList.remove('bi-caret-up-fill');
       };
       btnViewmores[i].addEventListener('click', nomoreOf);
