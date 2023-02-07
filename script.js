@@ -3,7 +3,7 @@
 //khai bao bien can thiet de lam phan thon tin ca nhan
 const hiddenInfo = document.querySelector('.info');
 const checkContent = document.querySelector('.yourEmail');
-const btnContent = document.querySelector('.submitBotton');
+const btnContent = document.querySelector('.submitButton');
 const hiddenForm = document.querySelector('.inputEmail');
 const error = document.querySelector('.error-text');
 const iconError = document.querySelector('.iconError');
